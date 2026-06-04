@@ -4,6 +4,15 @@ A minimal Node.js + Express + SQLite CRUD app used in the SPELIX Claude Code
 5-day curriculum. Day 1 lab: explore the codebase with Claude Code, add a
 `/healthz` endpoint, verify it, and make your first commit.
 
+## Curriculum repositories
+
+| Day | Lab | Repository |
+| --- | --- | ---------- |
+| 1–2 | Sample CRUD app (`/healthz`, CLAUDE.md, `/products`) | this repo |
+| 3   | Brownfield refactor (legacy module) | [day3_repository](https://github.com/yic-mes/day3_repository) |
+| 4   | Custom command + sub-agent + MCP (starter templates) | [day4_repository](https://github.com/yic-mes/day4_repository) |
+| 5   | Capstone mini project (Option A/B/C specs) | [day5_repository](https://github.com/yic-mes/day5_repository) |
+
 ## Requirements
 
 - Node.js 18+
