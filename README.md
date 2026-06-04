@@ -27,12 +27,28 @@ The server listens on `http://localhost:3000` (override with `PORT`).
 
 ## Test
 
+Unit tests (Jest + Supertest, in-memory SQLite — tests live in `/tests`):
+
 ```bash
 npm test
 ```
 
-Tests live in `/tests` and run with Jest + Supertest against an in-memory
-SQLite database.
+Manual API check — with the server running, open another terminal:
+
+```bash
+# list items
+curl localhost:3000/items
+
+# create an item
+curl -X POST localhost:3000/items -H "Content-Type: application/json" -d '{"name":"Widget","price":9.99}'
+```
+
+> Windows PowerShell: `curl` is an alias of `Invoke-WebRequest` — use `curl.exe` instead:
+>
+> ```powershell
+> curl.exe localhost:3000/items
+> curl.exe -X POST localhost:3000/items -H "Content-Type: application/json" -d "{\"name\":\"Widget\",\"price\":9.99}"
+> ```
 
 ## API
 
