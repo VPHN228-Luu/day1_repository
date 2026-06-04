@@ -36,16 +36,14 @@ SQLite database.
 
 ## API
 
-| Method | Path       | Description                                        |
-| ------ | ---------- | -------------------------------------------------- |
-| GET    | `/healthz` | Health check → `{ "status": "ok", "time": "<ISO>" }` |
-| GET    | `/items`   | Return all items as an array                       |
-| POST   | `/items`   | Create an item — body `{ "name": string, "price": number }` |
+| Method | Path     | Description                                                  |
+| ------ | -------- | ------------------------------------------------------------ |
+| GET    | `/items` | Return all items as an array                                 |
+| POST   | `/items` | Create an item — body `{ "name": string, "price": number }`  |
 
 ### Examples
 
 ```bash
-curl localhost:3000/healthz
 curl localhost:3000/items
 curl -X POST localhost:3000/items -H "Content-Type: application/json" -d '{"name":"Widget","price":9.99}'
 ```
