@@ -13,10 +13,12 @@ A minimal Node.js + Express + SQLite CRUD app used in the SPELIX Claude Code
 | 4   | Custom command + sub-agent + MCP (starter templates) | [day4_repository](https://github.com/yic-mes/day4_repository) |
 | 5   | Capstone mini project (Option A/B/C specs) | [day5_repository](https://github.com/yic-mes/day5_repository) |
 
-## Requirements
+## Prerequisites
 
-- Node.js 18+
-- npm 9+
+- No code from a previous day is required — this is the starting repo.
+- Node.js 18+, npm 9+, Git configured
+- Claude Code installed and logged in:
+  `npm install -g @anthropic-ai/claude-code` → `claude --version` → `claude` + `/login`
 
 ## Install
 
